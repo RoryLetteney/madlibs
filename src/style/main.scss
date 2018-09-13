@@ -55,15 +55,15 @@
 
 .card {
     height: 736px;
-    width: 1240px;
+    width: 1000px;
     box-shadow: 0 4px 30px 0 rgba(0 , 0 , 0 , 0.064);
     border-radius: 7px;
 
     display: grid;
     grid-template-rows: 1fr 50px;
+    background-color: white;
 
     &__inputs {
-        background-color: skyblue;
         display: grid;
         grid-template-rows: repeat(4, 1fr);
         grid-template-columns: repeat(4, 1fr);
@@ -75,16 +75,33 @@
 .input {
     display: grid;
     grid-template-columns: [number-s] 26px [number-e input-s] 1fr [input-e];
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
 
     &__title {
         grid-column: input-s;
+        border-top: 1px solid #b3b3b3;
+        color: #b3b3b3;
+        font-size: 12px;
+        font-weight: 300;
     }
 
     input {
         grid-column: input-s;
+        border: none;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 600;
+        width: 190px;
+        // height: 40px;
     }
 
     &__number {
         grid-column: number-s;
+        background-color: #00cb79;
+        color: white;
+        font-size: 20px;
+        padding-top: 1px;
+        border-radius: 50%;
     }
 }
