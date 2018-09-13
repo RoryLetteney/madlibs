@@ -73,7 +73,8 @@
 }
 
 .card {
-    height: 736px;
+    min-height: 736px;
+    max-height: 994px;
     width: 1240px;
     box-shadow: 0 4px 30px 0 rgba(0 , 0 , 0 , 0.064);
     border-radius: 7px;
@@ -100,17 +101,18 @@
 
     button {
         justify-self: center;
-        transform: translateY(50%);
     }
 
     &__generate {
         background-color: #00cb79;
         @include button;
+        transform: translateY(-350px);
     }
 
     &__clear {
         @include button;
         background-color: #45b0e5;
+        transform: translateY(50%);
     }
 
     &__content {
