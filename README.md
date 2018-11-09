@@ -1,5 +1,3 @@
-# React with Bootstrap Starter Project
+> Madlibs application built using React.
 
-> Provided for the students of the [Bottega Code School](https://bottega.tech/)
-
-*Fork from [es6-webpack2-starter](https://github.com/micooz/es6-webpack2-starter)*
+> Users enter the necessary information and click the generate button. The input values are then mapped over into the madlib story.
